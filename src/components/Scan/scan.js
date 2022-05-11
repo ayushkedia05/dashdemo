@@ -8,16 +8,16 @@ const Scan=()=>{
    const [scanwork,setscan]=useState(1);
    const [counterin,setcounter]=useState(0);
 
-   useEffect(()=>{
+  //  useEffect(()=>{
 
-    if(counterin===100)
-    return;
-     const Interval=setInterval(()=>{
-        setcounter((prevcounter)=>prevcounter+1);
-     },2000);
+  //   if(counterin===100)
+  //   return;
+  //    const Interval=setInterval(()=>{
+  //       setcounter((prevcounter)=>prevcounter+1);
+  //    },2000);
 
-     return()=>clearInterval(Interval);
-   },[counterin]);
+  //    return()=>clearInterval(Interval);
+  //  },[counterin]);
     
    const initiatescan=()=>{
      setscan(!scanwork);
