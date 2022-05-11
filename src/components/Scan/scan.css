@@ -1,0 +1,61 @@
+.scan {
+    margin: 5rem auto;
+    box-shadow: 0 1px 8px rgba(226, 221, 221, 0.2);
+    width: 30rem;
+    /* height: 15rem; */
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #181717;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .scan:hover{
+  transform: scale(1.04);
+  }
+
+  .adjustscan{
+    width: 9rem;
+    height: 5rem;   
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  .runtext{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    /* background-color: #181717; */
+    font-size: 2.4rem;
+    color: rgb(113, 143, 32);
+
+    margin-left: 1rem ;
+    margin-bottom: 0.5rem;
+  }
+
+  .runbtn{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* margin-top: 3rem; */
+  }
+
+
+
+
+.dualcard{
+  display: flex;
+}

@@ -1,0 +1,21 @@
+.head {
+  display: flex;
+  /* justify-items: baseline; */
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  /* background-color: black; */
+}
+
+.companyname {
+  margin-left: 0.7rem;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  /* color: rgb(252, 252, 252) ; */
+  /* font-weight: bolder; */
+  font: 100;
+}
+.marginadd{
+  margin-top: 3rem;
+  /* display: flex; */
+}
