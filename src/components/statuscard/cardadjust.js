@@ -17,6 +17,7 @@ const StatusAdjust=()=>{
 return(
     <div className="aa">
     <Statuscard
+    key='p1'
     icon={Bug}
     count={546}
     title='Total threat Found'
@@ -26,6 +27,8 @@ return(
     </Statuscard>
 
     <Statuscard
+    key='p2'
+
     icon={User}
     count={4}
     title='Device Connected'
@@ -36,6 +39,8 @@ return(
     </Statuscard>
 
     <Statuscard
+    key='p3'
+
     icon={BugOff}
     count={300}
     title=' Total threat removed'
