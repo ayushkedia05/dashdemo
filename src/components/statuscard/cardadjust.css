@@ -1,0 +1,21 @@
+.aa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+.aa2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    /* margin-left: 21rem; */
+}
+
+.scan2 {
+margin-top: 2rem;
+padding: 2rem;
+  }

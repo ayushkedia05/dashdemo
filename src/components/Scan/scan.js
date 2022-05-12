@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useMediaQuery } from "react-responsive";
 import { RingProgress,Text} from "@mantine/core";
 import { ReportSearch } from "tabler-icons-react";
 import './scan.css'
@@ -22,11 +22,12 @@ const Scan=()=>{
    const initiatescan=()=>{
      setscan(!scanwork);
    }
+   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1624px)' })
 
 
   return (
-    <div className="dualcard">
-      <div className="scan">
+    <div className={`${!isTabletOrMobile?'dualcard':'dualcard2'}`}>
+      <div className='scan'>
             <RingProgress
         sections={[{ value: 40, color: 'blue' }]}
         label={

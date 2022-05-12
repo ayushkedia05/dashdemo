@@ -1,9 +1,10 @@
 import React from "react";
 // import { Bug, BuildingArch } from 'tabler-icons-react';
-
+import { useMediaQuery } from 'react-responsive'
 import './statuscard.css'
 
 const Statuscard=(props)=>{
+
 return(
     <div className="statuscard">
         <div className="statusicon"><props.icon size={60}

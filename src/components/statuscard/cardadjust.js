@@ -2,21 +2,24 @@ import React from "react";
 import Statuscard from "./ststuscard";
 import { Bug ,BugOff,User} from 'tabler-icons-react';
 // import Sta
-
-
+import './cardadjust.css'
+import { useMediaQuery } from 'react-responsive'
 
 
 const StatusAdjust=()=>{
 
 
-
+    const isTabletOrMobile = useMediaQuery({
+        query: '(min-width: 1624px)'
+      })
 
 
 
 
 return(
-    <div className="aa">
-    <Statuscard
+    <div className={`${isTabletOrMobile?'aa':'aa2'}`}>
+    
+    <Statuscard className="scan2"
     key='p1'
     icon={Bug}
     count={546}
@@ -25,8 +28,8 @@ return(
     >
 
     </Statuscard>
-
-    <Statuscard
+    
+    <Statuscard className="scan2"
     key='p2'
 
     icon={User}
@@ -38,7 +41,7 @@ return(
 
     </Statuscard>
 
-    <Statuscard
+    <Statuscard className="scan2"
     key='p3'
 
     icon={BugOff}

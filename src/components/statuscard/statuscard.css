@@ -13,9 +13,12 @@
     flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+   
+    
     
 }
+
 
 .statuscard:hover{
     scale: 1.04;
@@ -61,9 +64,3 @@
     padding-top: 0.2rem;
 }
 
-.aa{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-}
