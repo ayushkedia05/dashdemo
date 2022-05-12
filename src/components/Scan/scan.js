@@ -6,7 +6,7 @@ import './scan.css'
 const Scan=()=>{
 
    const [scanwork,setscan]=useState(1);
-   const [counterin,setcounter]=useState(0);
+  //  const [counterin,setcounter]=useState(0);
 
   //  useEffect(()=>{
 
@@ -28,10 +28,10 @@ const Scan=()=>{
     <div className="dualcard">
       <div className="scan">
             <RingProgress
-        sections={[{ value: {counterin}, color: 'blue' }]}
+        sections={[{ value: 40, color: 'blue' }]}
         label={
           <Text color="blue" weight={700} align="center" size="xl">
-            {counterin}%
+            20%
           </Text>
         }
       />
@@ -50,7 +50,7 @@ const Scan=()=>{
      </div>
 
 
-      {/* <ReportSearch></ReportSearch> */}
+
       </div>
 
       <div className="scan">
@@ -76,13 +76,11 @@ label={
      <div className="content">
     <span className="runtext">Profile</span>
 
-{ <button className="runbtn">Complete profile</button>}
+<button className="runbtn">Complete profile</button>
 
 
      </div>
 
-
-      {/* <ReportSearch></ReportSearch> */}
       </div>
 
       </div>
