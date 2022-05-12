@@ -6,22 +6,9 @@ import elements from "./../constants/constants.js";
 const Tablecomponent = () => {
 
 
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1639px)' })
-  const isPortrait = useMediaQuery({ query: '(max-width:645px)' })
-  const isRetina = useMediaQuery({ query:  '(max-width:245px)' })
 
 
-
-  const [size,setsize]=useState(80);
-  useEffect(()=>{
-    {isBigScreen && setsize(60)}
-    {isTabletOrMobile && setsize(35)}
-    {isPortrait && setsize(20)}
-    {isRetina && setsize(10)}
-
-  });
-
+ 
 
   const row = elements.map((element, ind) =>( <tr key={element.name}>
     <td>{element.RunType}</td>
@@ -51,7 +38,7 @@ const Tablecomponent = () => {
 
 <div className="table">
 
-<Table horizontalSpacing={size} verticalSpacing='sm'>
+<Table >
       <thead>
         <tr>
           <th>Run Type</th>

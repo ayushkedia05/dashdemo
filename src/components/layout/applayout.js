@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './applayout.css'
 
-import RenderRow from './renderer';
+
 import { NavbarSimple } from '../sidenavigationbar/sidenavigation';
 
 import Notification from '../Notifications/notification';
 import Scan from '../Scan/scan';
-
+import Tablecomponent from '../table/table';
 import StatusAdjust from '../statuscard/cardadjust';
 import {
   AppShell,
@@ -68,7 +68,7 @@ const Layout=()=> {
       <div className='marginadd'>
       <StatusAdjust></StatusAdjust>
       <Scan></Scan>
-      <RenderRow></RenderRow>
+     <Tablecomponent></Tablecomponent>
     
       </div>
     </AppShell>

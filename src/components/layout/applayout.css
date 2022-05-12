@@ -17,5 +17,6 @@
 }
 .marginadd{
   margin-top: 3rem;
+  max-width: fit-content;
   /* display: flex; */
 }

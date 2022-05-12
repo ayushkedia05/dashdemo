@@ -10,7 +10,7 @@ const StatusAdjust=()=>{
 
 
     const isTabletOrMobile = useMediaQuery({
-        query: '(min-width: 1624px)'
+        query: '(min-width: 1424px)'
       })
 
 

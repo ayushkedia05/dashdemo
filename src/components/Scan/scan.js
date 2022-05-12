@@ -22,7 +22,7 @@ const Scan=()=>{
    const initiatescan=()=>{
      setscan(!scanwork);
    }
-   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1624px)' })
+   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1424px)' })
 
 
   return (
